@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Beneficiaire_Model extends CI_Model {
+class Ajout_Model extends CI_Model {
 
 	/**
 	 * Index Page for this controller.
@@ -32,20 +32,6 @@ class Beneficiaire_Model extends CI_Model {
 		return $query->result();
 	}
 
-	function checkAllTypeAide(){
-		$query = $this->db->get('type_aide');
-
-		return $query->result();
-	}
-
-	function getChampsByBeneficiaire($type_beneficaire){
-		$this->db->order_by('statut ASC, champs_id Asc');
-		$this->db->where('beneficiaire_type_id', $type_beneficaire);
-		$query = $this->db->get('champByBeneficiaire');
-
-		return $query->result();
-	}
-
 	function ajout_champs($designation,$type_Data, $type_champs,$choix){
 		$data = array(
 			'designation'  => $designation,
@@ -68,28 +54,53 @@ class Beneficiaire_Model extends CI_Model {
 		return $insert_id;
 	}
 
-	function insert_new_beneficiaire($type_beneficaire, $type_aide, $date){
-		$data = array(
-			'beneficiaire_type_id'  => $type_beneficaire,
-			'type_aide_id'		=> $type_aide,
-			'date_ajout'	=>$date
-			);
-		$this->db->insert('beneficiaire', $data);
-		$insert_id = $this->db->insert_id();
+	function getAttributeAlreadyUsed($beneficiaire_id){
+		$this->db->where('beneficiaire_type_id', $beneficiaire_id);
+		$this->db->select('champs_id');
+		$query = $this->db->get('type_champs');
 
-		return $insert_id;
+		return $query->result();
 	}
 
-	function insert_champs_beneficiaire($beneficiaire_id, $listData){
-		foreach ($listData as $value) {
+	function getAttributeLesAlreadyUsed($beneficiaire_id){
+		$listAlreadyUsed = $this->getAttributeAlreadyUsed($beneficiaire_id);
+
+
+		if(count((array)$listAlreadyUsed)>0){
+			$listUsed = array();
+			foreach ($listAlreadyUsed as $key) {
+				array_push($listUsed, $key->champs_id);
+			}
+			$this->db->where_not_in('champs_id',$listUsed);
+		}	
+		$this->db->order_by('statut','ASC');
+		$query = $this->db->get('champs_dispo');
+
+		return $query->result();
+	}
+
+	function getAttribute(){
+		
+		$this->db->order_by('statut','ASC');
+		$query = $this->db->get('champs_dispo');
+
+		return $query->result();
+	}
+
+	function getAllType(){
+		$query = $this->db->get('beneficiaire_type');
+
+		return $query->result();
+	}
+
+	function insert_type_champs($type_id, $listChamps){
+		for ($i=0; $i < count($listChamps); $i++) { 
 			$data = array(
-				'beneficiaire_id' => $beneficiaire_id,
-				'champs_id' => $value[0],
-				'valeurs' => $value[1] 
+				'beneficiaire_type_id'  => $type_id,
+				'champs_id' => $listChamps[$i]
 			);
-			$this->db->insert('beneficiaire_data', $data);
+
+			$this->db->insert('type_champs',$data);
 		}
 	}
-
-
 }

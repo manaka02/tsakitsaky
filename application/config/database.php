@@ -122,7 +122,7 @@ $db['mysql'] = array(
 
 //postgres
 $db['postgres'] = array(
-	'dsn'	=> 'pgsql:host=localhost;dbname=blank_project;port=5432',
+	'dsn'	=> 'pgsql:host=localhost;dbname=tsakitsaky;port=5432',
 	'hostname' => 'localhost',
 	'username' => 'postgres',
 	'password' => 'root',

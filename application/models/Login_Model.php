@@ -34,4 +34,8 @@ class Login_Model extends CI_Model {
 
     }
 
+    function logout(){
+    	$this->session->destroy();
+    }
+
 }

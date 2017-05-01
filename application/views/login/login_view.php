@@ -9,10 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Gestion de Fichier - Sènan</title>
+    <title>Tsakitsaky</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/css/style2.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
 
     <?php $error = "";
@@ -27,7 +27,7 @@
 	  
 	  	<h1 class="title">Blank - Login</h1>
 	  	<p class="text-danger"><?php echo $error; ?></p>
-	    <form class="login-form" method="POST" action="<?php echo site_url('Login_Controller'); ?>/checkExistence">
+	    <form class="login-form" method="POST" action="<?php echo base_url();?>index.php/Login/checkExistence">
 	      <input type="text" placeholder="login" name="login"/>
 	      <input type="password" placeholder="mot de passe" name="password"/>
 	      <button type="submit" >Se connecter</button>
