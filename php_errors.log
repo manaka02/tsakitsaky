@@ -1,0 +1,264 @@
+[21-Feb-2017 05:58:01 indian/Antananarivo] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php on line 81
+[21-Feb-2017 05:58:01 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 05:58:01 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 05:58:01 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\Export.php on line 18
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP   5. Export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\Export.php on line 18
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:47:48 indian/Antananarivo] PHP   5. Export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:47:54 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\Export.php on line 18
+[21-Feb-2017 07:47:54 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:47:54 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:47:54 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:47:54 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:47:54 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:47:54 indian/Antananarivo] PHP   5. Export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\Export.php on line 18
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP   5. Export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\Export.php on line 18
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:48:16 indian/Antananarivo] PHP   5. Export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:48:19 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\Export.php on line 18
+[21-Feb-2017 07:48:19 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:48:19 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:48:19 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:48:19 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:48:19 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:48:19 indian/Antananarivo] PHP   5. Export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:48:24 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\Export.php on line 18
+[21-Feb-2017 07:48:24 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:48:24 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:48:24 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:48:24 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:48:24 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:48:24 indian/Antananarivo] PHP   5. Export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:48:33 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\Export.php on line 18
+[21-Feb-2017 07:48:33 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:48:33 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:48:33 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:48:33 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:48:33 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:48:33 indian/Antananarivo] PHP   5. Export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:50:16 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\Export.php on line 18
+[21-Feb-2017 07:50:16 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:50:16 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:50:16 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:50:16 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:50:16 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:50:16 indian/Antananarivo] PHP   5. Export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:50:47 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\Export.php on line 18
+[21-Feb-2017 07:50:47 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:50:47 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:50:47 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:50:47 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:50:47 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:50:47 indian/Antananarivo] PHP   5. Export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:50:57 indian/Antananarivo] PHP Fatal error:  Call to a member function to_excel() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php on line 107
+[21-Feb-2017 07:50:57 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:50:57 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:50:57 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:50:57 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:50:57 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:52:59 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:52:59 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:52:59 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:52:59 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:52:59 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:52:59 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:52:59 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:00 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:01 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:01 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:01 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:01 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:01 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:01 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:01 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:02 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:03 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:09 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:09 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:09 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:09 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:09 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:09 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:09 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:16 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:16 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:16 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:16 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:16 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:16 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:16 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:17 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:18 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[21-Feb-2017 07:53:49 indian/Antananarivo] PHP Fatal error:  Call to a member function result_array() on a non-object in F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\libraries\export.php on line 17
+[21-Feb-2017 07:53:49 indian/Antananarivo] PHP Stack trace:
+[21-Feb-2017 07:53:49 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:0
+[21-Feb-2017 07:53:49 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\index.php:315
+[21-Feb-2017 07:53:49 indian/Antananarivo] PHP   3. call_user_func_array() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:49 indian/Antananarivo] PHP   4. Beneficiaire_Controller->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\system\core\CodeIgniter.php:514
+[21-Feb-2017 07:53:49 indian/Antananarivo] PHP   5. export->to_excel() F:\log\UwAmp_2.2.1\UwAmp\www\gestion\application\controllers\Beneficiaire_Controller.php:107
+[28-Feb-2017 10:24:46 indian/Antananarivo] PHP Parse error:  syntax error, unexpected T_PUBLIC in F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\controllers\Home_Controller.php on line 36
+[28-Feb-2017 10:24:46 indian/Antananarivo] PHP Stack trace:
+[28-Feb-2017 10:24:46 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:0
+[28-Feb-2017 10:24:46 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:315
+[28-Feb-2017 12:41:14 indian/Antananarivo] PHP Fatal error:  Class 'CI_Email' not found in F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email_3_0_x.php on line 13
+[28-Feb-2017 12:41:14 indian/Antananarivo] PHP Stack trace:
+[28-Feb-2017 12:41:14 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:0
+[28-Feb-2017 12:41:14 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:315
+[28-Feb-2017 12:41:14 indian/Antananarivo] PHP   3. SendEmail_Controller->__construct() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\CodeIgniter.php:500
+[28-Feb-2017 12:41:14 indian/Antananarivo] PHP   4. CI_Loader->library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\controllers\SendEmail_Controller.php:32
+[28-Feb-2017 12:41:14 indian/Antananarivo] PHP   5. CI_Loader->_ci_load_library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:218
+[28-Feb-2017 12:41:14 indian/Antananarivo] PHP   6. include_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:1086
+[28-Feb-2017 12:41:14 indian/Antananarivo] PHP   7. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email.php:19
+[28-Feb-2017 12:41:18 indian/Antananarivo] PHP Fatal error:  Class 'CI_Email' not found in F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email_3_0_x.php on line 13
+[28-Feb-2017 12:41:18 indian/Antananarivo] PHP Stack trace:
+[28-Feb-2017 12:41:18 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:0
+[28-Feb-2017 12:41:18 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:315
+[28-Feb-2017 12:41:18 indian/Antananarivo] PHP   3. SendEmail_Controller->__construct() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\CodeIgniter.php:500
+[28-Feb-2017 12:41:18 indian/Antananarivo] PHP   4. CI_Loader->library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\controllers\SendEmail_Controller.php:32
+[28-Feb-2017 12:41:18 indian/Antananarivo] PHP   5. CI_Loader->_ci_load_library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:218
+[28-Feb-2017 12:41:18 indian/Antananarivo] PHP   6. include_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:1086
+[28-Feb-2017 12:41:18 indian/Antananarivo] PHP   7. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email.php:19
+[28-Feb-2017 12:41:19 indian/Antananarivo] PHP Fatal error:  Class 'CI_Email' not found in F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email_3_0_x.php on line 13
+[28-Feb-2017 12:41:19 indian/Antananarivo] PHP Stack trace:
+[28-Feb-2017 12:41:19 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:0
+[28-Feb-2017 12:41:19 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:315
+[28-Feb-2017 12:41:19 indian/Antananarivo] PHP   3. SendEmail_Controller->__construct() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\CodeIgniter.php:500
+[28-Feb-2017 12:41:19 indian/Antananarivo] PHP   4. CI_Loader->library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\controllers\SendEmail_Controller.php:32
+[28-Feb-2017 12:41:19 indian/Antananarivo] PHP   5. CI_Loader->_ci_load_library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:218
+[28-Feb-2017 12:41:19 indian/Antananarivo] PHP   6. include_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:1086
+[28-Feb-2017 12:41:19 indian/Antananarivo] PHP   7. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email.php:19
+[28-Feb-2017 12:41:58 indian/Antananarivo] PHP Fatal error:  Class 'CI_Email' not found in F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email_3_0_x.php on line 13
+[28-Feb-2017 12:41:58 indian/Antananarivo] PHP Stack trace:
+[28-Feb-2017 12:41:58 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:0
+[28-Feb-2017 12:41:58 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:315
+[28-Feb-2017 12:41:58 indian/Antananarivo] PHP   3. SendEmail_Controller->__construct() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\CodeIgniter.php:500
+[28-Feb-2017 12:41:58 indian/Antananarivo] PHP   4. CI_Loader->library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\controllers\SendEmail_Controller.php:32
+[28-Feb-2017 12:41:58 indian/Antananarivo] PHP   5. CI_Loader->_ci_load_library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:218
+[28-Feb-2017 12:41:58 indian/Antananarivo] PHP   6. include_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:1086
+[28-Feb-2017 12:41:58 indian/Antananarivo] PHP   7. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email.php:19
+[28-Feb-2017 12:42:32 indian/Antananarivo] PHP Fatal error:  Class 'CI_Email' not found in F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email_3_0_x.php on line 13
+[28-Feb-2017 12:42:32 indian/Antananarivo] PHP Stack trace:
+[28-Feb-2017 12:42:32 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:0
+[28-Feb-2017 12:42:32 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:315
+[28-Feb-2017 12:42:32 indian/Antananarivo] PHP   3. SendEmail_Controller->__construct() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\CodeIgniter.php:500
+[28-Feb-2017 12:42:32 indian/Antananarivo] PHP   4. CI_Loader->library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\controllers\SendEmail_Controller.php:32
+[28-Feb-2017 12:42:32 indian/Antananarivo] PHP   5. CI_Loader->_ci_load_library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:218
+[28-Feb-2017 12:42:32 indian/Antananarivo] PHP   6. include_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:1086
+[28-Feb-2017 12:42:32 indian/Antananarivo] PHP   7. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email.php:19
+[28-Feb-2017 12:45:13 indian/Antananarivo] PHP Fatal error:  Class 'CI_Email' not found in F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email_3_0_x.php on line 13
+[28-Feb-2017 12:45:13 indian/Antananarivo] PHP Stack trace:
+[28-Feb-2017 12:45:13 indian/Antananarivo] PHP   1. {main}() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:0
+[28-Feb-2017 12:45:13 indian/Antananarivo] PHP   2. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\index.php:315
+[28-Feb-2017 12:45:13 indian/Antananarivo] PHP   3. SendEmail_Controller->__construct() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\CodeIgniter.php:500
+[28-Feb-2017 12:45:13 indian/Antananarivo] PHP   4. CI_Loader->library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\controllers\SendEmail_Controller.php:32
+[28-Feb-2017 12:45:13 indian/Antananarivo] PHP   5. CI_Loader->_ci_load_library() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:218
+[28-Feb-2017 12:45:13 indian/Antananarivo] PHP   6. include_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\system\core\Loader.php:1086
+[28-Feb-2017 12:45:13 indian/Antananarivo] PHP   7. require_once() F:\log\UwAmp_2.2.1\UwAmp\www\CI_blankProject\application\libraries\MY_Email.php:19
