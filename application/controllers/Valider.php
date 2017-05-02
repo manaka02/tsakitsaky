@@ -28,6 +28,7 @@ class Valider extends CI_Controller {
 		$this->load->helper('url');
 		/* ------------------ */ 
 		 $this->load->model('Client_Model');
+		 $this->load->model('Ajout_Model');
 		 $this->load->model('Vente_Model');
 		 $this->load->library('session');
 		//$this->load->library('grocery_CRUD');
@@ -35,24 +36,22 @@ class Valider extends CI_Controller {
 	}
 
 	public function vente(){
-		$choixClient = $this->input->post('choixClient');
+		$user = $this->session->userdata('user');
+		if(!isset($user)){
+			redirect('index.php/Login');
+		} 
+
 		$nomclient = $this->input->post('nomclient');
 		$adresseclient = $this->input->post('adresseclient');
-
-		$billet2[0] = $this->input->post('quantite2');
-		$billet2[1] = $this->input->post('debut2');
-
-		$billet3[0] = $this->input->post('quantite3');
-		$billet3[1] = $this->input->post('debut3');
-
-		$livraison = $this->input->post('livraison');
+		$pack = $this->input->post('pack');
+		$nombrebillet = $this->input->post('nombrebillet');
 		$vendeur = $this->input->post('vendeur');
 		$date = $this->input->post('date');
 
 		try {
-			$this->Vente_Model->insertVente($choixClient,$nomclient,$adresseclient,$billet2,$billet3,$livraison,$vendeur,$date);
+			$this->Vente_Model->insertVente($nomclient,$adresseclient,$pack,$nombrebillet,$vendeur,$date);
+			redirect('index.php/Liste/vente');
 		} catch (Exception $e) {
-			$user = $this->session->userdata('user');
 
 			$data['username'] = $user;
 			$listClient = $this->Client_Model->allClient();
@@ -68,6 +67,11 @@ class Valider extends CI_Controller {
 	}
 
 	public function client(){
+		$user = $this->session->userdata('user');
+		if(!isset($user)){
+			redirect('index.php/Login');
+		}
+
 		$nomclient = $this->input->post('nomclient');
 		$adresseclient = $this->input->post('adresseclient');
 		try {
@@ -81,14 +85,48 @@ class Valider extends CI_Controller {
 		
 	}
 
-	// public function index()
-	// {
-	// 	$user = $this->session->userdata('user');
-	// 	if(!isset($user)){
-	// 		redirect('/Login_Controller');
-	// 	}
-	// 	$data['username'] = $user[0]->login;
-	// 	$data['contents'] = 'home/home_view';
-	// 	$this->load->view('default', $data);
-	// }
+	public function pack(){
+		$user = $this->session->userdata('user');
+		if(!isset($user)){
+			redirect('index.php/Login');
+		}
+
+		$designation = $this->input->post('designation');
+		$prix = $this->input->post('prix');
+		$data['username'] = $user;
+		//$image = $this->input->post('image');
+
+		try {
+			$idPack = $this->Ajout_Model->insertpack($designation,$prix);
+			redirect('index.php/Liste/pack');
+		} catch (Exception $e) {
+			$data['erreur'] = $e->getMessage();
+			$data['contents'] = 'ajout/ajoutpack';
+			$this->load->view('default', $data);
+			
+		}
+	}
+
+	public function packdetails(){
+		$idPack = $this->input->post('idPack');
+		$nombreproduit = $this->input->post('nombreproduit');
+		$produit = $this->input->post('produit');
+		$listProduit =  $this->All_Model->allModel("produit");
+
+		$this->Ajout_Model->insertpack($designation,$prix);
+
+
+	}
+
+	public function paye(){
+		$idvente = $this->input->post('idvente');
+		$restant = $this->input->post('restant');
+		$montant = $this->input->post('montant');
+
+		$this->Vente_Model->insertPaye($idvente, $restant, $montant);
+	}
+
+
+
+	
 }

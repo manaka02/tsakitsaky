@@ -22,85 +22,46 @@ class Ajout_Model extends CI_Model {
 	function __construct()
     {
          parent::__construct();
+          $this->load->model('All_Model');
             // Your own constructor code
     } 
 
 
-	function allAttribute(){
-		$query = $this->db->get('champs_dispo');
-
-		return $query->result();
-	}
-
-	function ajout_champs($designation,$type_Data, $type_champs,$choix){
-		$data = array(
-			'designation'  => $designation,
-			'type_data'		=> $type_data,
-			'type_champs'	=>$type_champs,
-			'choix'			=>$choix
-			);
-		$this->db->insert('champs_dispo', $data);
-	}
-
-	function ajout_beneficiaire($designation,$code, $details){
-		$data = array(
-			'designation'  => $designation,
-			'details'		=> $details,
-			'code_beneficiaire'	=>$code
-			);
-		$this->db->insert('beneficiaire_type', $data);
-		$insert_id = $this->db->insert_id();
-
-		return $insert_id;
-	}
-
-	function getAttributeAlreadyUsed($beneficiaire_id){
-		$this->db->where('beneficiaire_type_id', $beneficiaire_id);
-		$this->db->select('champs_id');
-		$query = $this->db->get('type_champs');
-
-		return $query->result();
-	}
-
-	function getAttributeLesAlreadyUsed($beneficiaire_id){
-		$listAlreadyUsed = $this->getAttributeAlreadyUsed($beneficiaire_id);
-
-
-		if(count((array)$listAlreadyUsed)>0){
-			$listUsed = array();
-			foreach ($listAlreadyUsed as $key) {
-				array_push($listUsed, $key->champs_id);
+	function insertpack($nompack,$montant){
+		$this->db->trans_begin();
+		try {
+			if($nompack == "" || $montant == ""){
+				throw new Exception("Veuillez bien remplir le formulaire", 1);
 			}
-			$this->db->where_not_in('champs_id',$listUsed);
-		}	
-		$this->db->order_by('statut','ASC');
-		$query = $this->db->get('champs_dispo');
-
-		return $query->result();
-	}
-
-	function getAttribute(){
-		
-		$this->db->order_by('statut','ASC');
-		$query = $this->db->get('champs_dispo');
-
-		return $query->result();
-	}
-
-	function getAllType(){
-		$query = $this->db->get('beneficiaire_type');
-
-		return $query->result();
-	}
-
-	function insert_type_champs($type_id, $listChamps){
-		for ($i=0; $i < count($listChamps); $i++) { 
-			$data = array(
-				'beneficiaire_type_id'  => $type_id,
-				'champs_id' => $listChamps[$i]
-			);
-
-			$this->db->insert('type_champs',$data);
+			 $data = array(
+            'designation'   => $nompack,
+            'prix'   => intval($montant)
+       		 );  
+        	$this->db->insert('pack', $data);
+        		$idpack = $this->db->insert_id();
+        	 
+        	 $this->db->trans_commit();
+		} catch (Exception $e) {
+			$this->db->trans_rollback();
+			throw new Exception($e, 1);
+			
 		}
+
 	}
+
+	function create_pack($nompack, $montant){
+		 
+	}
+
+	function create_packdetails($idpack,$idproduit,$valeur){
+		 $data = array(
+            'idpack'   => $idpack,
+            'idproduit'   => $idproduit,
+            'valeur'   => $valeur
+        );  
+        $this->db->insert('packproduit', $data);
+        return $this->db->insert_id();
+	}
+
+	
 }

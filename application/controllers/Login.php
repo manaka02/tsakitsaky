@@ -44,24 +44,28 @@ class Login extends CI_Controller {
 	}
 
 	public function checkExistence(){
-		$user = $this->session->userdata('user');
+		try {
+			$login = $this->input->post('login');
+			$password = $this->input->post('password');
+			$users = $this->Login_Model->checkUsersExist($login,$password);
 
-		$data['username'] = "toavin";
-		$data['contents'] = 'home/home';
-		$this->load->view('default', $data);
+			if(count($users) == 1){
+				$users[0]->pass = "";
+				$this->session->set_userdata('user',$users);
+					redirect('index.php/Home');
+			}else{
+				$data['erreur'] = "Il y a erreur sur les données inserées";
+				$this->load->view('login/login_view', $data);
+			}
+		} catch (Exception $e) {
+			$data['erreur'] = $e->getMessage();
+				$this->load->view('login/login_view', $data);
+		}
+		
 	}
 
-	// public function checkExistence(){
-	// 	$login = $this->input->post('login');
-	// 	$password = $this->input->post('password');
-	// 	$users = $this->Login_Model->checkUsersExist($login,$password);
-
-	// 	if(count($users[0]) == 1){
-	// 		$this->session->set_userdata('user',$users[0]);
-	// 		redirect('/Home_Controller');
-	// 	}else{
-	// 		$data['erreur'] = "Il y a erreur sur les données inserées";
-	// 		$this->load->view('login/login_view', $data);
-	// 	}
-	// }
+	public function logout(){
+		$this->session->sess_destroy();
+		redirect('index.php/Login');
+	}
 }

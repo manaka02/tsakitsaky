@@ -25,14 +25,14 @@
 <div class="login-page">
 	  <div class="form">  
 	  
-	  	<h1 class="title">Blank - Login</h1>
-	  	<p class="text-danger"><?php echo $error; ?></p>
+	  	<h1 class="title">TsakTsaky</h1>
+	  	<p style="color:red;"><?php echo $error; ?></p>
 	    <form class="login-form" method="POST" action="<?php echo base_url();?>index.php/Login/checkExistence">
-	      <input type="text" placeholder="login" name="login"/>
-	      <input type="password" placeholder="mot de passe" name="password"/>
+	      <input type="text" placeholder="code étudiant" name="login" required />
+	      <input type="password" placeholder="mot de passe" name="password" required />
 	      <button type="submit" >Se connecter</button>
-          <p>Vous n'avez pas encore de compte?</p>
-          <a href="Login_Controller/signin">Inscrivez-vous ici<span class="fa fa-left-arrow"></span></a>
+          <!-- <p>Vous n'avez pas encore de compte?</p>
+          <a href="Login_Controller/signin">Inscrivez-vous ici<span class="fa fa-left-arrow"></span></a> -->
 	    </form>
 	  </div>
 	</div>

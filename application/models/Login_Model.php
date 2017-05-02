@@ -26,11 +26,14 @@ class Login_Model extends CI_Model {
     } 
 
     function checkUsersExist($login, $password){
-    	$this->db->where('login', $login);
-    	$this->db->where('password', $password);
-    	$query = $this->db->get('users');
+    	if($login =="" || $password==""){
+    		throw new Exception("Veuillez remplir le formulaire", 1);
+    	}
+    	$this->db->where('code', $login);
+    	$this->db->where('pass', $password);
+    	$query = $this->db->get('utilisateur');
 
-		return array($query->result());
+		return $query->result();
 
     }
 

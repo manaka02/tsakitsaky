@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Modern an Admin Panel Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<title>Taskitsaky - Gouter</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -45,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">TsakTsaky</a>
+                <a class="navbar-brand" href="<?php echo base_url();?>/index.php/Home">TsakTsaky</a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-nav navbar-right">
@@ -90,18 +90,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <li class="m_2"><a href="#"><i class="fa fa-user"></i> Profile</a></li>
                         <li class="m_2"><a href="#"><i class="fa fa-wrench"></i> Settings</a></li>
                         
-                        <li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>  
+                        <li class="m_2"><a href="<?php echo base_url();?>index.php/Login/logout"><i class="fa fa-lock"></i> Logout</a></li>  
                     </ul>
                 </li>
             </ul>
             <form class="navbar-form navbar-right">
-              <input type="text" class="form-control" value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
+              <input type="text" class="form-control" value="Rechercher..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Rechercher...';}">
             </form>
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw nav_icon"></i>Dashboard</a>
+                            <a href="<?php echo base_url();?>/index.php/Home"><i class="fa fa-dashboard fa-fw nav_icon"></i>Dashboard</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-laptop nav_icon"></i>Vente<span class="fa arrow"></span></a>
@@ -110,57 +110,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <a href="<?php echo base_url();?>index.php/Ajout/vente">Ajouter</a>
                                 </li>
                                 <li>
-                                    <a href="grids.html">Liste</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa fa-laptop nav_icon"></i>Clients<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="<?php echo base_url();?>index.php/Ajout/client">Ajouter</a>
+                                    <a href="<?php echo base_url();?>index.php/Liste/vente">Liste</a>
                                 </li>
                                 <li>
-                                    <a href="grids.html">Liste</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-laptop nav_icon"></i>Billets<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="<?php echo base_url();?>index.php/Ajout/client">Générer</a>
-                                </li>
-                                <li>
-                                    <a href="grids.html">Liste</a>
+                                    <a href="<?php echo base_url();?>index.php/Liste/venteByUser">Liste par étudiant</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         
+                        
                         <li>
                             <a href="#"><i class="fa fa-envelope nav_icon"></i>Produits<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="inbox.html">Inbox</a>
+                                    <a href="<?php echo base_url();?>index.php/Ajout/achat">Achat</a>
                                 </li>
                                 <li>
-                                    <a href="compose.html">Compose email</a>
+                                    <a href="compose.html">Ajouter</a>
+                                </li>
+                                <li>
+                                    <a href="compose.html">Liste</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-envelope nav_icon"></i>Suivi<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-envelope nav_icon"></i>Pack<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
+                                
                                 <li>
-                                    <a href="inbox.html">Achat</a>
+                                    <a href="<?php echo base_url();?>index.php/Ajout/pack">Ajouter</a>
                                 </li>
                                 <li>
-                                    <a href="compose.html">Bénéfice</a>
+                                    <a href="<?php echo base_url();?>index.php/Liste/pack">Liste</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope nav_icon"></i>Etat<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li>
+                                    <a href="<?php echo base_url();?>index.php/Liste/montantrecu">Montant billet reçu</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo base_url();?>index.php/Liste/montantreste">Montant reste à payé</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

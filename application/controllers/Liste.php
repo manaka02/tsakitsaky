@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Ajout extends CI_Controller {
+class Liste extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -27,8 +27,6 @@ class Ajout extends CI_Controller {
 		$this->load->database();
 		$this->load->helper('url');
 		/* ------------------ */ 
-		 $this->load->model('Ajout_Model');
-		 $this->load->model('Client_Model');
 		 $this->load->model('All_Model');
 		 $this->load->library('session');
 		//$this->load->library('grocery_CRUD');
@@ -39,7 +37,7 @@ class Ajout extends CI_Controller {
 	{
 		$user = $this->session->userdata('user');
 
-		$data['username'] = "toavina";
+		$data['username'] = $user;
 		$data['contents'] = 'home/home';
 		$this->load->view('default', $data);
 	}
@@ -48,28 +46,30 @@ class Ajout extends CI_Controller {
 		$user = $this->session->userdata('user');
 		if(!isset($user)){
 			redirect('index.php/Login');
-		}	
-		$listPack = $this->All_Model->allModel("pack");
+		}
 
 		$data['username'] = $user;
-		$listUser = $this->All_Model->allModel("utilisateur");
-		$data['listPack'] = $listPack;
-		$data['listUser'] = $listUser;
-		$data['contents'] = 'ajout/ajoutbillet';
+		$listVente = $this->All_Model->tenFirstDataDescOrder("ventedetails","idvente");
+		
+		$data['listVente'] = $listVente;
+		$data['contents'] = 'liste/vente';
 		$this->load->view('default', $data);
 	}
 
-	public function achat(){
+	public function venteByUser(){
 		$user = $this->session->userdata('user');
 		if(!isset($user)){
 			redirect('index.php/Login');
 		}
 
-		$listAchat = $this->All_Model->allModel("venteprix");
-		$data['listAchat'] = $listAchat;
-		$data['contents'] = 'liste/achat';
+		$data['username'] = $user;
+		$listVente = $this->All_Model->allmodel("ventebyuser");
+		
+		$data['listVente'] = $listVente;
+		$data['contents'] = 'liste/ventebyuser';
 		$this->load->view('default', $data);
 	}
+
 
 	public function client(){
 		$user = $this->session->userdata('user');
@@ -86,50 +86,56 @@ class Ajout extends CI_Controller {
 
 	}
 
-	public function  pack(){
+	public function pack(){
 		$user = $this->session->userdata('user');
 		if(!isset($user)){
 			redirect('index.php/Login');
 		}
-		$data['contents'] = 'ajout/ajoutpack';
+
+		$listPack =  $this->All_Model->tenFirstDataDescOrder("packprixrevient","idpack");
+
+		$data['username'] = $user;
+		$data['listPack'] = $listPack;
+		$data['contents'] = 'liste/pack';
 		$this->load->view('default', $data);
 	}
 
-	public function packdetails(){
+	public function payement(){
 		$user = $this->session->userdata('user');
 		if(!isset($user)){
 			redirect('index.php/Login');
 		}
-		$id = $this->input->get('id');
 
-		try {
-			$idpack = intval($id);
-			$pack =$this->All_Model->allmodel("pack", 'idpack', $idpack);
-			$listProduit = $this->All_Model->allmodel("produit");
-			$dataPack = $this->All_Model->allmodel("packproduit", 'idpack', $idpack);
-			
-			$data['listProduit'] = $listProduit;
-			$data['pack'] = $pack;
-			$data['dataPack'] = $dataPack;
-			$data['contents'] = 'ajout/ajoutpackdetails';
-			$this->load->view('default', $data);
-		} catch (Exception $e) {
-			
-		}
-		
+		$listVente = $this->All_Model->allModel("etatvente", 'statut <', 5);
+		$data['username'] = $user;
+		$data['listVente'] = $listVente;
+		$data['contents'] = 'liste/payement';
+		$this->load->view('default', $data);
 	}
 
-	public function paye(){
+	public function montantrecu(){
 		$user = $this->session->userdata('user');
 		if(!isset($user)){
 			redirect('index.php/Login');
 		}
-		
-		$idvente = $this->input->get('id');
 
-		$vente = $this->All_Model->allModel("venteprix",'idvente',intval($idvente)); 
-		$data['vente'] = $vente[0];
-		$data['contents'] = 'ajout/ajoutpaye';
+		$listetat = $this->All_Model->allModel("etatetudiant");
+		$data['username'] = $user;
+		$data['listetat'] = $listetat;
+		$data['contents'] = 'liste/montantrecu';
+		$this->load->view('default', $data);
+	}
+
+	public function montantreste(){
+		$user = $this->session->userdata('user');
+		if(!isset($user)){
+			redirect('index.php/Login');
+		}
+
+		$listVente = $this->All_Model->allModel("venteprix");
+		$data['username'] = $user;
+		$data['listVente'] = $listVente;
+		$data['contents'] = 'liste/montantreste';
 		$this->load->view('default', $data);
 	}
 

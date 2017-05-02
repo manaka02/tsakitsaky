@@ -34,22 +34,16 @@ class Home extends CI_Controller {
 	}
 
 	public function index()
-	{
+	{	
+		
 		$user = $this->session->userdata('user');
+		if(!isset($user)){
+			redirect('index.php/Login');
+		}
 
 		$data['username'] = "toavin";
 		$data['contents'] = 'home/home';
 		$this->load->view('default', $data);
 	}
 
-	// public function index()
-	// {
-	// 	$user = $this->session->userdata('user');
-	// 	if(!isset($user)){
-	// 		redirect('/Login_Controller');
-	// 	}
-	// 	$data['username'] = $user[0]->login;
-	// 	$data['contents'] = 'home/home_view';
-	// 	$this->load->view('default', $data);
-	// }
 }
